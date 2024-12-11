@@ -1,23 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Simulado</title>
+    <title>Iglesia Ejemplo</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>Iniciar Sesión</h1>
-        <form id="login-form">
-            <label for="username">Usuario:</label>
-            <input type="text" id="username" name="username" required>
-            <label for="password">Contraseña:</label>
-            <input type="password" id="password" name="password" required>
-            <button type="submit">Entrar</button>
-        </form>
-        <p id="message"></p>
-    </div>
+    <header>
+        <div class="container">
+            <h1>Iglesia Ejemplo</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#about">Historia</a></li>
+                    <li><a href="#schedule">Horarios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <li><a href="#login">Registrar/Iniciar Sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Bienvenidos a Nuestra Iglesia</h2>
+            <p>Descubre un lugar para adorar, aprender y crecer juntos en fe.</p>
+            <img src="images/church.jpg" alt="Foto de la Iglesia">
+        </section>
+        <section id="about">
+            <h2>Nuestra Historia</h2>
+            <p>Con más de 20 años sirviendo a la comunidad, somos una iglesia dedicada a compartir el amor y la palabra de Dios.</p>
+        </section>
+        <section id="schedule">
+            <h2>Horarios de Reunión</h2>
+            <ul>
+                <li><strong>Domingo:</strong> 9:00 AM - Servicio Principal</li>
+                <li><strong>Miércoles:</strong> 7:00 PM - Estudio Bíblico</li>
+                <li><strong>Viernes:</strong> 6:00 PM - Ministerio Juvenil</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>Teléfono: +123 456 7890</p>
+            <p>Email: contacto@iglesiaejemplo.com</p>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Iglesia Ejemplo. Todos los derechos reservados.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
