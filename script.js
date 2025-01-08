@@ -1,21 +1,35 @@
-document.getElementById("contact-form").addEventListener("submit", function (event) {
-    event.preventDefault();
+function openLink(url) {
+    window.open(url, '_blank');
+}
 
-    // Obtén los valores del formulario
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
+document.addEventListener('DOMContentLoaded', () => {
+    const svg = document.querySelector('.connections');
 
-    // Crea un nuevo elemento en la lista
-    const messageItem = document.createElement("li");
-    messageItem.innerHTML = `<strong>${name}</strong> (${email}): ${message}`;
+    function connectLines(fromId, toId, lineId) {
+        const fromElement = document.getElementById(fromId);
+        const toElement = document.getElementById(toId);
+        const line = document.getElementById(lineId);
 
-    // Agrega el mensaje a la lista
-    document.getElementById("messages-list").appendChild(messageItem);
+        const fromRect = fromElement.getBoundingClientRect();
+        const toRect = toElement.getBoundingClientRect();
+        const svgRect = svg.getBoundingClientRect();
 
-    // Limpia el formulario
-    document.getElementById("contact-form").reset();
+        const fromCenterX = fromRect.left + fromRect.width / 2 - svgRect.left;
+        const fromCenterY = fromRect.top + fromRect.height / 2 - svgRect.top;
+        const toCenterX = toRect.left + toRect.width / 2 - svgRect.left;
+        const toCenterY = toRect.top + toRect.height / 2 - svgRect.top;
 
-    // Muestra una alerta de confirmación
-    alert("Mensaje enviado. Gracias por contactarnos.");
+        line.setAttribute('x1', fromCenterX);
+        line.setAttribute('y1', fromCenterY);
+        line.setAttribute('x2', toCenterX);
+        line.setAttribute('y2', toCenterY);
+    }
+
+    connectLines('ministerio', 'jorge', 'line-ministerio-jorge');
+    connectLines('ministerio', 'martin', 'line-ministerio-martin');
+    connectLines('ministerio', 'ramiro', 'line-ministerio-ramiro');
+    connectLines('jorge', 'tito', 'line-jorge-tito');
+    connectLines('martin', 'gabriela', 'line-martin-gabriela');
+    connectLines('ramiro', 'carmen', 'line-ramiro-carmen');
+    connectLines('ramiro', 'carmensita', 'line-ramiro-carmensita');
 });
