@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: #2c3e50; /* Color de fondo del encabezado */
+    background-color: #2c3e50;
     color: white;
     padding: 15px 20px;
     position: fixed;
@@ -46,7 +46,7 @@ header {
 }
 
 .nav-links li a:hover {
-    background-color: #34495e; /* Color de fondo al pasar el mouse */
+    background-color: #34495e;
 }
 
 .logo {
@@ -101,9 +101,9 @@ h1 {
 }
 
 .box .dropdown {
-    display: none; /* Oculto por defecto */
+    display: none;
     position: absolute;
-    top: 100%; /* Aparece debajo del elemento principal */
+    top: 100%;
     left: 50%;
     transform: translateX(-50%);
     background-color: white;
@@ -118,7 +118,7 @@ h1 {
 }
 
 .box:hover .dropdown {
-    display: block; /* Mostrar al pasar el cursor */
+    display: block;
 }
 
 .dropdown li {
