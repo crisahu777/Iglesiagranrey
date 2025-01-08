@@ -34,6 +34,7 @@ header {
     gap: 20px;
     margin: 0;
     padding: 0;
+    justify-content: center; /* Centramos los enlaces de navegación */
 }
 
 .nav-links li a {
@@ -50,7 +51,6 @@ header {
 .logo {
     font-size: 1.5em;
     font-weight: bold;
-    margin-right: auto; /* Alineamos la logo a la izquierda */
 }
 
 main {
