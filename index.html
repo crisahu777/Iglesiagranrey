@@ -1,65 +1,67 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iglesia Ejemplo</title>
+    <title>Ministerios - Iglesia</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Iglesia Ejemplo</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Inicio</a></li>
-                    <li><a href="#about">Historia</a></li>
-                    <li><a href="#schedule">Horarios</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                    <li><a href="#login">Registrar/Iniciar Sesión</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <section id="home">
-            <h2>Bienvenidos a Nuestra Iglesia</h2>
-            <p>Descubre un lugar para adorar, aprender y crecer juntos en fe.</p>
-            <img src="images/church.jpg" alt="Foto de la Iglesia">
-        </section>
-        <section id="about">
-            <h2>Nuestra Historia</h2>
-            <p>Con más de 20 años sirviendo a la comunidad, somos una iglesia dedicada a compartir el amor y la palabra de Dios.</p>
-        </section>
-        <section id="schedule">
-            <h2>Horarios de Reunión</h2>
-            <ul>
-                <li><strong>Domingo:</strong> 9:00 AM - Servicio Principal</li>
-                <li><strong>Miércoles:</strong> 7:00 PM - Estudio Bíblico</li>
-                <li><strong>Viernes:</strong> 6:00 PM - Ministerio Juvenil</li>
-            </ul>
-        <section id="contact">
-    <h2>Contacto</h2>
-    <p>Teléfono: +123 456 7890</p>
-    <p>Email: contacto@iglesiaejemplo.com</p>
-    <form id="contact-form">
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Mensaje:</label>
-        <textarea id="message" name="message" required></textarea>
-        <button type="submit">Enviar</button>
-    </form>
-    <h3>Mensajes Enviados</h3>
-    <ul id="messages-list"></ul>
-</section>
 
-    </main>
-    <footer>
-        <p>&copy; 2024 Iglesia Ejemplo. Todos los derechos reservados.</p>
-    </footer>
-    <script src="script.js"></script>
+<header>
+    <nav class="navbar">
+        <div class="logo">Iglesia Vida</div>
+        <ul class="nav-links">
+            <li><a href="#ministerio-hombres">Ministerio de Hombres</a></li>
+            <li><a href="#ministerio-mujeres">Ministerio de Mujeres</a></li>
+            <li><a href="#ministerio-multimedia">Ministerio de Multimedia</a></li>
+            <li><a href="#ministerio-ninos">Ministerio de Niños</a></li>
+            <li><a href="#ministerio-consolidacion">Ministerio de Consolidación</a></li>
+            <li><a href="#ministerio-piedad">Ministerio de Piedad</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="ministerio-hombres" class="section">
+        <h1>Ministerio de Hombres</h1>
+        <div class="diagram">
+            <div id="ministerio" class="box" onclick="openLink('https://docs.google.com/spreadsheets')">Ministerio de hombres</div>
+
+            <div id="level-1" class="row">
+                <div id="jorge" class="box" onclick="openLink('https://docs.google.com/spreadsheets')">Jorge Martinez</div>
+                <div id="martin" class="box" onclick="openLink('https://docs.google.com/spreadsheets')">Martin Romero</div>
+                <div id="ramiro" class="box" onclick="openLink('https://docs.google.com/spreadsheets')">Ramiro Carmenzo</div>
+            </div>
+
+            <div id="level-2" class="row">
+                <div id="tito" class="box" onclick="openLink('https://docs.google.com/spreadsheets')">Tito Romero</div>
+                <div id="gabriela" class="box" onclick="openLink('https://docs.google.com/spreadsheets')">Gabriela Jara</div>
+                <div id="carmen" class="box" onclick="openLink('https://docs.google.com/spreadsheets')">Carmen Areco</div>
+                <div id="carmensita" class="box" onclick="openLink('https://docs.google.com/spreadsheets')">Carmensita</div>
+            </div>
+
+            <svg class="connections">
+                <!-- Lines connecting Ministerio de hombres to Level 1 -->
+                <line x1="50%" y1="50" x2="25%" y2="150" class="line" />
+                <line x1="50%" y1="50" x2="50%" y2="150" class="line" />
+                <line x1="50%" y1="50" x2="75%" y2="150" class="line" />
+
+                <!-- Lines connecting Level 1 to Level 2 -->
+                <line x1="25%" y1="150" x2="15%" y2="250" class="line" />
+                <line x1="50%" y1="150" x2="35%" y2="250" class="line" />
+                <line x1="75%" y1="150" x2="55%" y2="250" class="line" />
+                <line x1="75%" y1="150" x2="85%" y2="250" class="line" />
+            </svg>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Iglesia Vida. Todos los derechos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
+
