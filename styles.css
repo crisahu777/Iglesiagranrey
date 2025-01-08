@@ -22,8 +22,10 @@ header {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Centramos los elementos horizontalmente */
     align-items: center;
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centramos el contenedor */
 }
 
 .nav-links {
@@ -48,6 +50,7 @@ header {
 .logo {
     font-size: 1.5em;
     font-weight: bold;
+    margin-right: auto; /* Alineamos la logo a la izquierda */
 }
 
 main {
