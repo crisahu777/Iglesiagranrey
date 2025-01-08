@@ -1,3 +1,5 @@
+// script.js
+
 function openLink(url) {
     window.open(url, '_blank');
 }
@@ -32,4 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
     connectLines('martin', 'gabriela', 'line-martin-gabriela');
     connectLines('ramiro', 'carmen', 'line-ramiro-carmen');
     connectLines('ramiro', 'carmensita', 'line-ramiro-carmensita');
+
+    // Agregar eventos de clic para los nombres principales
+    document.getElementById('gabriela').addEventListener('click', function() {
+        openLink('https://docs.google.com/spreadsheets');
+    });
 });
