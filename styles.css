@@ -84,6 +84,7 @@ h1 {
 }
 
 .box {
+    position: relative; /* Necesario para la lista desplegable */
     padding: 10px 20px;
     border: 2px solid #555;
     background-color: #ffffff;
@@ -97,6 +98,36 @@ h1 {
 .box:hover {
     background-color: #e0f7e8;
     transform: scale(1.05);
+}
+
+.box .dropdown {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    top: 100%; /* Aparece debajo del elemento principal */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    min-width: 150px;
+    z-index: 1000;
+}
+
+.box:hover .dropdown {
+    display: block; /* Mostrar al pasar el cursor */
+}
+
+.dropdown li {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.dropdown li:hover {
+    background-color: #e0f7e8;
 }
 
 .connections {
