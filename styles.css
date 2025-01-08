@@ -49,8 +49,8 @@ header {
 }
 
 .logo {
-    font-size: 1.5em;
-    font-weight: bold;
+    height: 50px; /* Ajusta la altura según sea necesario */
+    margin-right: 20px; /* Espacio a la derecha del logo */
 }
 
 main {
